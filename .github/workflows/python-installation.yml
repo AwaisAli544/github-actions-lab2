@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: '${{ matrix.os }}'
-    Strategy:
+    strategy:
       matrix:
         os:
           - ubuntu-latest
